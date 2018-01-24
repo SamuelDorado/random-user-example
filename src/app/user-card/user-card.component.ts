@@ -1,4 +1,5 @@
 import { Component, OnInit,HostListener,HostBinding,Input } from '@angular/core';
+import { User } from '../bean/user';
 
 @Component({
   selector: 'app-user-card',
@@ -6,11 +7,7 @@ import { Component, OnInit,HostListener,HostBinding,Input } from '@angular/core'
   styleUrls: ['./user-card.component.css']
 })
 export class UserCardComponent {
-  @Input() profileImg:string;
-  @Input() name:any;
-  @Input() gender:string;
-  @Input() email:string;
-  @Input() registered: Date;
+  @Input() user:User;
   constructor() {
   }
 }

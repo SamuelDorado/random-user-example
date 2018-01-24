@@ -1,18 +1,18 @@
 <div class="ui card">
   <div class="image">
-    <img src="{{profileImg}}">
+    <img src="{{user.profileImg}}">
   </div>
   <div class="content">
-    <span class="header">{{name.title}} {{name.first}} {{name.last}}</span>
+    <span class="header">{{user.name}}</span>
     <div class="meta">
-      <span class="date">{{registered|date:'short'}}</span>
+      <span class="date">{{user.registered|date:'short'}}</span>
     </div>
     <div class="description">
-      {{gender}}
+      {{user.gender}}
     </div>
   </div>
   <div  class="extra content">
       <i class="email icon"></i>
-      {{email}}
+      {{user.email}}
   </div>
 </div>

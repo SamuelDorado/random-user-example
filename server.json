@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "profileImg": "https://statics.viralizalo.com/virs/2016/02/VIR_144795_12116_que_personaje_de_los_hombres_de_paco_eres.jpg?cb=30318",
+      "name": "Paco ",
+      "gender": "Masc",
+      "address": {
+        "direction": "C/ Hola calle",
+        "postcode": 28001
+      },
+      "email": "hola@gmail.com",
+      "registered": "2018-01-24T11:29:42.856Z",
+      "id": 1
+    },
+    {
+      "profileImg": "http://www.smashbros.com/images/og/sonic.jpg",
+      "name": "Sonic",
+      "gender": "Masc",
+      "address": {
+        "direction": "N/A",
+        "postcode": 28001
+      },
+      "email": "sonic@mail.com",
+      "registered": "2018-01-24T11:32:13.821Z",
+      "id": 2
+    }
+  ]
+}

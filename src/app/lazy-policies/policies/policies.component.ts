@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationStart, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-policies',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PoliciesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+
   }
 
 }

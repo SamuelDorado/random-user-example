@@ -11,9 +11,9 @@ import { UserService } from './services/user.service';
 import { AppRoutingModule } from './app-routing.module';
 import { UsersComponent } from './users/users.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { UserCarComponent } from './user-car/user-car.component';
-import { UserBikeComponent } from './user-bike/user-bike.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { directive } from '@angular/core/src/render3/instructions';
 
 
 @NgModule({
@@ -24,15 +24,15 @@ import {FormsModule} from '@angular/forms';
     ExponentialStrengthPipe,
     UsersComponent,
     PageNotFoundComponent,
-    UserCarComponent,
-    UserBikeComponent
+    CreateUserComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

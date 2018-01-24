@@ -1,0 +1,30 @@
+<form [formGroup]="userForm" class="ui form">
+  <div>
+    <label for="name">User Name</label>
+    <input type="text"  formControlName="name">
+  </div>
+  <div>
+    <label for="name">User Image</label>
+    <input type="text"  formControlName="profileImg">
+    </div>
+  <div>
+    <label for="name">User Gender</label>
+    <input type="text" formControlName="gender">
+    </div>
+  <div>
+    <label for="name">User Email</label>
+    <input type="email"  formControlName="email" #spy>
+    {{spy.className}}
+  </div>
+  <div formGroupName="address">
+    <div>
+      <label for="name">User Direction</label>
+      <input type="text"  formControlName="direction">
+      </div>
+    <div>
+      <label for="name">User Postcode</label>
+      <input type="number" formControlName="postcode">
+    </div>
+  </div>
+  <button type="submit" (click)="onSubmit()">Submit!</button>
+</form>
